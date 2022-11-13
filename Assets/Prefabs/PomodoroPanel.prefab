@@ -1305,3 +1305,4 @@ MonoBehaviour:
   pomodoroNameText: {fileID: 5945485840240260196}
   pomodoroCancelledText: {fileID: 2175710391006141882}
   pomodoroFinishedText: {fileID: 5704080626402615333}
+  continueButtonText: {fileID: 616412331389215133}

@@ -4,16 +4,16 @@ using UnityEditor;
 using UnityEngine;
 using UnityEngine.TestTools;
 
-public class PomodoroMonoShould
+public class PomodoroMonoDeprecatedIntento
 {
     public GameObject pomodoroPanel = AssetDatabase.LoadAssetAtPath<GameObject>("Assets/Prefabs/PomodoroPanel.prefab");
  
     [UnityTest]
-    public IEnumerator PomodoroNameWithHeraldo19secsAnd1Paused()
+    public IEnumerator DeprecatedIntento()
     {
         GameObject prefab = GameObject.Instantiate(pomodoroPanel);
         PomodoroMono mono = prefab.GetComponent<PomodoroMono>();
-        mono.SetName("Heraldo");
+        mono.CreatePomodoro("Heraldo");
         mono.StartPomodoro();
         yield return new WaitForSeconds(5);
         mono.PausePomodoro();

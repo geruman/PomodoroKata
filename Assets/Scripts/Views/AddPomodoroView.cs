@@ -12,7 +12,7 @@ public class AddPomodoroView : MonoBehaviour, IAddPomodoroView
     private MainPresenter _mainPresenter;
     [SerializeField]
     private TMP_InputField newPomodoroName;
-    // Start is called before the first frame update
+    
     void Start()
     {
         createPomodoro.onClick.AddListener(CreatePomodoro);
@@ -22,18 +22,16 @@ public class AddPomodoroView : MonoBehaviour, IAddPomodoroView
     {
         if(!newPomodoroName.text.Trim().Equals(""))
             _mainPresenter.CreatePomodoro(newPomodoroName.text);
+        newPomodoroName.text = "";
     }
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
 
     public void AddPomodoroPrefab(string pomodoroName)
     {
         GameObject newPomodoro = Instantiate(pomodoroPanel, existingPomodoros.transform);
         PomodoroMono pomodoroMono = newPomodoro.GetComponent<PomodoroMono>();
-        pomodoroMono.SetName(pomodoroName);
-        
+        pomodoroMono.CreatePomodoro(pomodoroName);
+
     }
+
 }
