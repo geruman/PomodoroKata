@@ -1,12 +1,8 @@
 {
-    "name": "Views",
+    "name": "Models",
     "rootNamespace": "",
     "references": [
-        "GUID:6055be8ebefd69e48b49212b09b47b2f",
-        "GUID:80e2777661c880249a46bfc347698560",
-        "GUID:8302244c0f447f341b5171de85411a89",
-        "GUID:fe39d69cd66620747aa214505f6ab7d1",
-        "GUID:caba0d98af9fa2d4ab8d2accb41a0170"
+        "GUID:6055be8ebefd69e48b49212b09b47b2f"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
